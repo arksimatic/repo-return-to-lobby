@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>ReturnToLobby</AssemblyName>
+    <RootNamespace>ReturnToLobby</RootNamespace>
+    <Version>1.0.0</Version>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+
+  <!-- Reference DLLs are copied into lib\ so the build never touches the game install. -->
+  <ItemGroup>
+    <Reference Include="lib\*.dll" Private="false" />
+  </ItemGroup>
+
+</Project>
